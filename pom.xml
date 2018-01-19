@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>marc.henrard</groupId>
+  <artifactId>murisq-basics</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>muRisQ Basics</name>
+  <description>muRisQ libraries - Basics</description>
+  
+  <!-- ==========          Dependencies          ========== -->
+  <dependencies>
+    <!--  Strata -->
+    <dependency>
+      <groupId>com.opengamma.strata</groupId>
+      <artifactId>strata-basics</artifactId>
+      <version>${og-strata.version}</version>
+    </dependency> 
+    <dependency>
+      <groupId>com.opengamma.strata</groupId>
+      <artifactId>strata-loader</artifactId>
+      <version>${og-strata.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.opengamma.strata</groupId>
+      <artifactId>strata-product</artifactId>
+      <version>${og-strata.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.opengamma.strata</groupId>
+      <artifactId>strata-pricer</artifactId>
+      <version>${og-strata.version}</version>
+    </dependency>
+    <!--  Used in tests -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.9.10</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <!-- ==================================================================== -->
+  <properties>
+    <og-strata.version>1.6.0</og-strata.version>
+    <!-- Properties for maven-compiler-plugin -->
+    <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.fork>true</maven.compiler.fork>
+    <maven.compiler.verbose>true</maven.compiler.verbose>
+  </properties>
+  
+</project>
