@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2016 - present by Marc Henrard.
  */
-package marc.henrard.murisq.data.export;
+package marc.henrard.murisq.basics.data.export;
 
 import java.io.FileWriter;
 import java.io.IOException;

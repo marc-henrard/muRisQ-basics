@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2017 - present by Marc Henrard.
  */
-package marc.henrard.murisq.data.timeseries;
+package marc.henrard.murisq.basics.data.timeseries;
 
 import java.time.temporal.ChronoUnit;
 import java.util.List;
