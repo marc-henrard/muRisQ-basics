@@ -81,6 +81,41 @@ public class ExportUtils {
   }
 
   /**
+   * Append the csv-like representation of multiple time series at the end of an appendable.
+   * 
+   * @param names  the names of the time series exported
+   * @param values  the values
+   * @param destination  the destination to which the csv-like string is appended
+   * @throws IOException
+   */
+  public static void exportTimeSeries(
+      List<String> names,
+      List<LocalDateDoubleTimeSeries> values,
+      Appendable destination) throws IOException {
+
+    int nbSeries = names.size();
+    ArgChecker.isTrue(nbSeries == values.size(), "Names and time series must have the same size");
+    StringBuilder builderHeader = new StringBuilder("Date");
+    for (int i = 0; i < nbSeries; i++) {
+      builderHeader.append(',');
+      builderHeader.append(names.get(i));
+    }
+    builderHeader.append('\n');
+    destination.append(builderHeader.toString());
+    StringBuilder builderValues = new StringBuilder();
+      values.get(0).stream()
+      .forEach(p -> {
+        builderValues.append(p.getDate().format(DateTimeFormatter.ISO_DATE));
+        for (int i = 0; i < nbSeries; i++) {
+          builderValues.append(',');
+          builderValues.append(values.get(i).get(p.getDate()).getAsDouble());
+        }
+        builderValues.append('\n');
+      });
+    destination.append(builderValues.toString());
+  }
+
+  /**
    * Append a set of values in an array to a csv-like destination.
    * 
    * @param headers  the header of each column
