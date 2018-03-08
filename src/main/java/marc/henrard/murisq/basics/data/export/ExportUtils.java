@@ -135,6 +135,8 @@ public class ExportUtils {
     }
     destination.append("\n");
     for (int r = 0; r < nbRows; r++) {
+      ArgChecker.isTrue(values[r].length == nbColumns, 
+          "number of values in each row should be equal to the number of headers");
       destination.append("" + values[r][0]);
       for (int c = 1; c < values[r].length; c++) {
         destination.append("," + values[r][c]);

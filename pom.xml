@@ -6,6 +6,25 @@
   <name>muRisQ Basics</name>
   <description>muRisQ libraries - Basics</description>
   
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!--  Running Maven's test without slow HTML reports -->
+        <plugin>
+	      <artifactId>maven-surefire-plugin</artifactId>
+	      <configuration>
+	        <properties>
+	          <property>
+	            <name>usedefaultlisteners</name>
+	            <value>false</value>
+	          </property>
+	        </properties>
+	      </configuration>
+	    </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  
   <!-- ==========          Dependencies          ========== -->
   <dependencies>
     <!--  Strata -->
@@ -36,11 +55,52 @@
       <version>6.9.10</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.opengamma.strata</groupId>
+      <artifactId>strata-collect</artifactId>
+      <version>${og-strata.version}</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
+  
+  <!-- ==================================================================== -->
+  <profiles>
+    <profile>
+      <id>joda-beans-eclipse</id>
+      <activation>
+        <property>
+          <name>eclipse.buildId</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.joda</groupId>
+            <artifactId>joda-beans-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <phase>generate-sources</phase>
+                <goals>
+                  <goal>generate</goal>
+                </goals>
+                <configuration>
+                  <eclipse>true</eclipse>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
   <!-- ==================================================================== -->
   <properties>
-    <og-strata.version>1.6.0</og-strata.version>
+    <og-strata.version>1.7.0</og-strata.version>
+    <joda-convert.version>2.0</joda-convert.version>
+    <joda-beans.version>2.1</joda-beans.version>
+    <joda.beans.indent>2</joda.beans.indent>
     <!-- Properties for maven-compiler-plugin -->
     <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
     <maven.compiler.source>1.8</maven.compiler.source>
