@@ -6,6 +6,7 @@ package marc.henrard.murisq.basics.data.export;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Map;
@@ -41,6 +42,7 @@ public class ExportUtils {
       Map<QuoteId, Double> quotes,
       Appendable destination,
       boolean exportHeader) throws IOException {
+    
     if (exportHeader) {
       String header = "Valuation Date, Symbology, Ticker, Field Name, Value\n";
       destination.append(header);
@@ -59,7 +61,7 @@ public class ExportUtils {
   /**
    * Append the csv-like representation of a time series at the end of an appendable.
    * 
-   * @param name  the name of the time serie exported
+   * @param name  the name of the time series exported
    * @param values  the values
    * @param destination  the destination to which the csv-like string is appended
    * @throws IOException
@@ -127,6 +129,7 @@ public class ExportUtils {
       String[] headers,
       double[][] values,
       Appendable destination) throws IOException {
+    
     int nbColumns = headers.length;
     int nbRows = values.length;
     destination.append(headers[0]);
@@ -146,6 +149,40 @@ public class ExportUtils {
   }
 
   /**
+   * Append a set of values in an list of DoubleArray to a csv-like destination.
+   * <p>
+   * Each DoubleArray element in the list of values in exported in a column. All the columns should have
+   * the same length.
+   * 
+   * @param headers  the header of each column
+   * @param values  the values in list of {@link DoubleArray} format
+   * @param destination  the destination to which the csv-like string is appended
+   * @throws IOException 
+   */
+  public static void exportArray(
+      List<String> headers,
+      List<DoubleArray> values,
+      Appendable destination) throws IOException {
+    
+    int nbColumns = headers.size();
+    ArgChecker.isTrue(values.size() == nbColumns, 
+        "number of columns should be equal to the number of headers");
+    destination.append(headers.get(0));
+    for (int c = 1; c < nbColumns; c++) {
+      destination.append(", " + headers.get(c));
+    }
+    destination.append("\n");
+    int nbRows = values.get(0).size();
+    for (int r = 0; r < nbRows; r++) {
+      destination.append("" + values.get(0).get(r));
+      for (int c = 1; c < nbColumns; c++) {
+        destination.append("," + values.get(c).get(r));
+      }
+      destination.append("\n");
+    }
+  }
+
+  /**
    * Append a set of values in an array to a csv-like destination.
    * 
    * @param headers  the header of each column
@@ -156,11 +193,72 @@ public class ExportUtils {
   public static void exportArray(
       double[][] values,
       Appendable destination) throws IOException {
+    
     int nbRows = values.length;
     for (int r = 0; r < nbRows; r++) {
       destination.append("" + values[r][0]);
       for (int c = 1; c < values[r].length; c++) {
         destination.append("," + values[r][c]);
+      }
+      destination.append("\n");
+    }
+  }
+
+  /**
+   * Append a set of values in an list of DoubleArray to a csv-like destination.
+   * <p>
+   * Each DoubleArray element in the list of values in exported in a column. All the columns should have
+   * the same length.
+   * 
+   * @param values  the values in list of {@link DoubleArray} format
+   * @param destination  the destination to which the csv-like string is appended
+   * @throws IOException 
+   */
+  public static void exportArray(
+      List<DoubleArray> values,
+      Appendable destination) throws IOException {
+    
+    int nbColumns = values.size();
+    int nbRows = values.get(0).size();
+    for (int r = 0; r < nbRows; r++) {
+      destination.append("" + values.get(0).get(r));
+      for (int c = 1; c < nbColumns; c++) {
+        destination.append("," + values.get(c).get(r));
+      }
+      destination.append("\n");
+    }
+  }
+
+  /**
+   * Append a set of values in an list of DoubleArray to a csv-like destination.
+   * <p>
+   * Each DoubleArray element in the list of values in exported in a column. All the columns should have
+   * the same length. The first column contains a date associated to each row.
+   * 
+   * @param dates  the dates corresponding to each row
+   * @param values  the values in list of {@link DoubleArray} format
+   * @param destination  the destination to which the csv-like string is appended
+   * @throws IOException 
+   */
+  public static void exportArrayDates(
+      List<ZonedDateTime> dates,
+      List<String> headers,
+      List<DoubleArray> values,
+      Appendable destination) throws IOException {
+    
+    int nbColumns = values.size();
+    ArgChecker.isTrue(values.size() == nbColumns, 
+        "number of columns should be equal to the number of headers");
+    destination.append("Date");
+    for (int c = 0; c < nbColumns; c++) {
+      destination.append("," + headers.get(c));
+    }
+    destination.append("\n");
+    int nbRows = values.get(0).size();
+    for (int r = 0; r < nbRows; r++) {
+      destination.append(dates.get(r).toLocalDate().format(DateTimeFormatter.ISO_DATE));
+      for (int c = 0; c < nbColumns; c++) {
+        destination.append("," + values.get(c).get(r));
       }
       destination.append("\n");
     }
@@ -185,7 +283,7 @@ public class ExportUtils {
       double scale,
       Appendable destination) {
 
-    CsvOutput csv = new CsvOutput(destination);
+    CsvOutput csv = CsvOutput.standard(destination);
     List<CurrencyParameterSensitivity> sensitivitiesAsList = sensitivities.getSensitivities();
     csv.writeLine(ImmutableList.of("Label", "Value"));
     for (CurrencyParameterSensitivity sensitivity : sensitivitiesAsList) {
@@ -210,6 +308,7 @@ public class ExportUtils {
   public static void exportString(
       String string,
       String fileName) {
+    
     try (FileWriter writer = new FileWriter(fileName)) {
       writer.append(string);
       writer.close();
