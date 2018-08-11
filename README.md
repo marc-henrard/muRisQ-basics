@@ -4,17 +4,17 @@ You can find more information about me:
 * Profile: [Marc Henrard | LinkedIn](https://www.linkedin.com/in/marchenrard/)
 * Papers in finance: [Marc Henrard | SSRN](http://ssrn.com/author=352726)
 * Blog: [Multi-curve framework](http://multi-curve-framework.blogspot.com)
+* [muRisQ Advisory](http://murisq.com/)
 
 This repository proposes basic code used in derivative pricing and analysis.
 
-RisQ stands for  Risk management by Quantitative methods. The term risk management has to be understood as the actual management of risk, which goes beyond its measurement.
+muRisQ stands for Risk management by Quantitative methods. The term risk management has to be understood as the actual management of risk, which goes beyond its measurement.
 
 Comments and suggestions for improvements are welcomed.
 
 ## Foundations
 
-Some code proposed in this repository is based on OpenGamma Strata (version 1.6.0) library:
-http://strata.opengamma.io/
+Some code proposed in this repository is based on OpenGamma Strata (version 1.7.0) library: http://strata.opengamma.io/
 
 
 
@@ -40,6 +40,7 @@ Recent *trainings* in interest rate modeling and risk management include:
 	* Exchange traded instruments: Design of exchanged traded instruments, detailed term sheet, risk management.
 	* Margin methodologies: Variation and Initial Margin methodologies design. Review and implementation of methodologies used by CCPs (replication). Bilateral margin methodologies.
 	* Simulation: Model implementation for efficient simulation, xVA underlying models
+        * LIBOR fallback analysis
 * Risk management
 	* Hedging strategies (design and back testing)
 	* Value-at-Risk
