@@ -19,7 +19,7 @@ import com.opengamma.strata.collect.array.DoubleArray;
 public interface TimeAmalgamation {
   
   /**
-   * Amalgamate the values defined on a list of {@link LocalDate}.
+   * Amalgamate the values defined on a list of {@link LocalDate} and return the total amalgamation.
    * 
    * @param values  the values
    * @param dates  the dates
@@ -28,13 +28,33 @@ public interface TimeAmalgamation {
   public double amalgamateDates(DoubleArray values, List<LocalDate> dates);
   
   /**
-   * Amalgamate the values defined on a list of {@link ZonedDateTime}.
+   * Amalgamate the values defined on a list of {@link LocalDate} and return the running total 
+   * at each date.
+   * 
+   * @param values  the values
+   * @param dates  the dates
+   * @return the amalgamated values
+   */
+  public DoubleArray amalgamateDatesRunning(DoubleArray values, List<LocalDate> dates);
+  
+  /**
+   * Amalgamate the values defined on a list of {@link ZonedDateTime} and return the total amalgamation.
    * 
    * @param values  the values
    * @param dates  the dates
    * @return the amalgamated value
    */
   public double amalgamateZonedDates(DoubleArray values, List<ZonedDateTime> dates);
+  
+  /**
+   * Amalgamate the values defined on a list of {@link ZonedDateTime} and return the running total 
+   * at each date.
+   * 
+   * @param values  the values
+   * @param dates  the dates
+   * @return the amalgamated values
+   */
+  public DoubleArray amalgamateZonedDatesRunning(DoubleArray values, List<ZonedDateTime> dates);
   
   /**
    * Returns the underlying time measurement mechanism.

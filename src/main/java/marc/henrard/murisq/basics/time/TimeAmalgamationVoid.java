@@ -30,6 +30,16 @@ public final class TimeAmalgamationVoid
   }
 
   @Override
+  public DoubleArray amalgamateDatesRunning(DoubleArray values, List<LocalDate> dates) {
+    throw new IllegalArgumentException("Amalgamation method not known");
+  }
+
+  @Override
+  public DoubleArray amalgamateZonedDatesRunning(DoubleArray values, List<ZonedDateTime> dates) {
+    throw new IllegalArgumentException("Amalgamation method not known");
+  }
+
+  @Override
   public TimeMeasurement getTimeMeasurement() {
     throw new IllegalArgumentException("Amalgamation method not known");
   }
