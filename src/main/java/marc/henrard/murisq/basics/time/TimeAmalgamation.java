@@ -57,6 +57,28 @@ public interface TimeAmalgamation {
   public DoubleArray amalgamateZonedDatesRunning(DoubleArray values, List<ZonedDateTime> dates);
   
   /**
+   * Amalgamate the values defined on an array of times and return the total amalgamation.
+   * <p>
+   * The times must be coherent with the time measurement. 
+   * 
+   * @param values  the values
+   * @param times  the times
+   * @return the amalgamated value
+   */
+  public double amalgamateTimes(DoubleArray values, double[] times);
+  
+  /**
+   * Amalgamate the values defined on array of times and return the running total at each date.
+   * <p>
+   * The times must be coherent with the time measurement. 
+   * 
+   * @param values  the values
+   * @param times  the times
+   * @return the amalgamated values
+   */
+  public double[] amalgamateTimesRunning(DoubleArray values, double[] times);
+  
+  /**
    * Returns the underlying time measurement mechanism.
    * 
    * @return the time measurement
