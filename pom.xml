@@ -1,5 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>marc.henrard</groupId>
   <artifactId>murisq-basics</artifactId>
   <version>0.1.6-SNAPSHOT</version>
@@ -30,17 +34,7 @@
     <!--  Strata -->
     <dependency>
       <groupId>com.opengamma.strata</groupId>
-      <artifactId>strata-basics</artifactId>
-      <version>${og-strata.version}</version>
-    </dependency> 
-    <dependency>
-      <groupId>com.opengamma.strata</groupId>
       <artifactId>strata-loader</artifactId>
-      <version>${og-strata.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.opengamma.strata</groupId>
-      <artifactId>strata-product</artifactId>
       <version>${og-strata.version}</version>
     </dependency>
     <dependency>
@@ -97,9 +91,9 @@
 
   <!-- ==================================================================== -->
   <properties>
-    <og-strata.version>1.7.0</og-strata.version>
-    <joda-convert.version>2.0</joda-convert.version>
-    <joda-beans.version>2.1</joda-beans.version>
+    <og-strata.version>2.0.0</og-strata.version>
+    <joda-convert.version>2.1.1</joda-convert.version>
+    <joda-beans.version>2.3</joda-beans.version>
     <joda.beans.indent>2</joda.beans.indent>
     <!-- Properties for maven-compiler-plugin -->
     <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
