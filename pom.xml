@@ -42,6 +42,17 @@
       <artifactId>strata-pricer</artifactId>
       <version>${og-strata.version}</version>
     </dependency>
+    <!-- Export in Excel sheets -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>3.13</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>3.13</version>
+    </dependency>
     <!--  Used in tests -->
     <dependency>
       <groupId>org.testng</groupId>

@@ -14,12 +14,12 @@ Comments and suggestions for improvements are welcomed.
 
 ## Foundations
 
-Some code proposed in this repository is based on OpenGamma Strata (version 1.7.0) library: http://strata.opengamma.io/
+Some code proposed in this repository is based on OpenGamma Strata (version 2.0.0) library: http://strata.opengamma.io/
 
 
 ## Professional services
 
-The model proposed here are only a small part of the code I developed or have access to for research and advisory services purposes. Don’t hesitate to contact me if you are interested by other models, require advisory services or are looking for a training around similar model.
+The models proposed here are only a small part of the code I developed or have access to for research and advisory services purposes. Don’t hesitate to contact me if you are interested by other models, require advisory services or are looking for a training around similar models.
 
 ### Training
 
@@ -29,6 +29,7 @@ Recent *trainings* in interest rate modelling and risk management include:
 * Algorithmic Differentiation in Finance: course description at http://multi-curve-framework.blogspot.co.uk/2017/10/algorithmic-differentiation-training.html and code repository at https://github.com/marc-henrard/algorithmic-differentiation-book
 * Standard Initial Margin Model: a detailed description and implementation
 * Collateral, regulation and multi-curve. Belfius Financial Engineering Fund Workshop at KUL/Leuven University (Leuven, Belgium), December 2017.
+* Workshop *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (London, UK), September 2018.
 
 ### Advisory
 
