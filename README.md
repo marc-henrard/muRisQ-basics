@@ -4,7 +4,7 @@ You can find more information about me:
 * Profile: [Marc Henrard | LinkedIn](https://www.linkedin.com/in/marchenrard/)
 * Papers in finance: [Marc Henrard | SSRN](http://ssrn.com/author=352726)
 * Blog: [Multi-curve framework](http://multi-curve-framework.blogspot.com)
-* [muRisQ Advisory](http://murisq.com/)
+* Consulting: [muRisQ Advisory](http://murisq.com/) -- Email: [info@murisq.com](mailto:info@murisq.com)
 
 This repository proposes basic code used in derivative pricing and analysis.
 
@@ -34,19 +34,29 @@ Recent *trainings* in interest rate modelling and risk management include:
 ### Advisory
 
 * Developments
-	* Multi-curve and collateral framework.
-	* Interest rate models: Term structure models, smile, negative rates, stochastic spreads.
-	* Exchange traded instruments: Design of exchanged traded instruments, detailed term sheet, risk management.
-	* Margin methodologies: Variation and Initial Margin methodologies design. Review and implementation of methodologies used by CCPs (replication). Bilateral margin methodologies.
-	* Simulation: Model implementation for efficient simulation, xVA underlying models
-    * LIBOR fallback analysis
+    * *Multi-curve and collateral framework*. Collateral discounting, impact of CSA, multi-curve calibration, new benchmarks, cheapest-to-deliver
+    * *Interest rate models*: Term structure models, smile, negative rates, stochastic spreads.
+    * *Exchange traded instruments*: Development of exchanged traded instruments, detailed term sheet, regulatory approval, CCP's risk management procedures.
+    * *Margin methodologies*: Variation and Initial Margin methodologies design. Review and implementation of methodologies used by CCPs (replication). Bilateral margin methodologies.
+    * *Simulation*: Model implementation for efficient simulation, xVA underlying models 
+    * *Benchmarks*: valuation of instruments indexed on new benchmarks, benchmarks discontinuation, LIBOR fallback analysis and solutions, overnight benchmarks (RFR) transition, valuation impacts, risk management, ALM
+    * *Code*: Large quant libraries available to price and risk manage interest rate books
 * Risk management
 	* Hedging strategies (design and back testing)
 	* Value-at-Risk
-	* Initial Margin models
+	* Variation Margin efficient implementation
+	* Initial margin models 
 * Model validation
 	* Flow instruments: Multi-curve framework, collateral impact, CSA review.
 	* Term structure: Multi-factors models; stochastic spreads.
 	* VaR: Parametric, historical, Monte Carlo.
 	* Smile: Swaption, cap/floor, negative rates, extrapolation.
 	* White paper: Independent assessment of new products and services.
+* Regulatory impacts
+    * *Assessments*: Impact assessments for derivative users.
+    * *Bilateral margins*: Quantitative impacts of uncleared margin regulation (UMR), bilateral margin methodologies, ISDA SIMM™ computations.
+    * *Compression*: Exposure reduction, portfolio compression
+    * *Business strategy*: cleared v uncleared OTC derivatives, cost of trading, access to market infrastructure
+    * *Regulatory consultative documents*: Comments on consultative documents.
+    * *Negotiation*: Negotiations for efficient access to markets
+    
