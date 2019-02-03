@@ -14,7 +14,7 @@ Comments and suggestions for improvements are welcomed.
 
 ## Foundations
 
-Some code proposed in this repository is based on OpenGamma Strata (version 2.0.0) library: http://strata.opengamma.io/
+Some code proposed in this repository is based on OpenGamma Strata (version 2.2.0) library: http://strata.opengamma.io/
 
 
 ## Professional services
@@ -23,13 +23,29 @@ The models proposed here are only a small part of the code I developed or have a
 
 ### Training
 
-Recent *trainings* in interest rate modelling and risk management include:
-* Multi-curve and collateral framework: previous course description at http://multi-curve-framework.blogspot.co.uk/2014/06/course-on-multi-curve-and-collateral.html
-* New margin paradigm: changes in market infrastructure, previous course description at http://multi-curve-framework.blogspot.co.uk/2016/03/workshop-on-margin.html
-* Algorithmic Differentiation in Finance: course description at http://multi-curve-framework.blogspot.co.uk/2017/10/algorithmic-differentiation-training.html and code repository at https://github.com/marc-henrard/algorithmic-differentiation-book
-* Standard Initial Margin Model: a detailed description and implementation
+We propose in-house training and workshops on subjects related to quantitative finance and risk management.
+
+We offer extensive flexibility on the training organization.
+
+A in-house tailor-made course with our experts presented to your full team often cost less than sending two people to a standard course organized by a large training firm.
+
+*Agenda tailored to your needs. Detailed lecture notes.*
+*Associated to open source code for practical implementation.*
+*Training in English or French*
+
+Some of the popular courses are (course description and typical agendas available through the links):
+* Multi-curve and collateral framework: foundations, evolution and implementation. <https://murisq.blogspot.com/p/training.html#multicurve>
+* The future of LIBOR: Quantitative perspective on benchmarks, overnight, fallback and regulation. <https://murisq.blogspot.com/p/training.html#libor-future>
+* Algorithmic Differentiation in Finance. <https://murisq.blogspot.com/p/training.html#ad>
+* Central clearing and bilateral margin. <https://murisq.blogspot.com/p/training.html#margin>
+
+Some recent public courses:
+* Workshop Multi-curve and collateral framework. One day workshop at The 10th Fixed Income Conference (Barcelona, Spain), September 2014.
 * Collateral, regulation and multi-curve. Belfius Financial Engineering Fund Workshop at KUL/Leuven University (Leuven, Belgium), December 2017.
 * Workshop *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (London, UK), September 2018.
+* Workshop *The future of LIBOR: Quantitative perspective on benchmarks, overnight, fallback and regulation*. Finans Foreningen workshop (Copenhagen, Denmark), 24 January 2019.
+* Planned: *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (New York, USA), 25-26 March 2019.
+* Planned: *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (Singapore), 3-4 April 2019.
 
 ### Advisory
 
