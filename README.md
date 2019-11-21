@@ -14,7 +14,7 @@ Comments and suggestions for improvements are welcomed.
 
 ## Foundations
 
-Some code proposed in this repository is based on OpenGamma Strata (version 2.2.0) library: http://strata.opengamma.io/
+Some code proposed in this repository is based on OpenGamma Strata (version 2.6.0) library: http://strata.opengamma.io/
 
 
 ## Professional services
@@ -44,8 +44,13 @@ Some recent public courses:
 * Collateral, regulation and multi-curve. Belfius Financial Engineering Fund Workshop at KUL/Leuven University (Leuven, Belgium), December 2017.
 * Workshop *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (London, UK), September 2018.
 * Workshop *The future of LIBOR: Quantitative perspective on benchmarks, overnight, fallback and regulation*. Finans Foreningen workshop (Copenhagen, Denmark), 24 January 2019.
-* Planned: *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (New York, USA), 25-26 March 2019.
-* Planned: *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (Singapore), 3-4 April 2019.
+* Workshop *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (New York, USA), 25-26 March 2019.
+* Workshop *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (Singapore), 3-4 April 2019.
+* Workshop *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (London, UK), 23-24 September 2019.
+* Workshop *The future of LIBOR: Quantitative perspective on benchmarks, transition, fallback and regulation*. The 15th Quantitative Finance Conference - WBS (Italy, Rome), 16 October 2019.
+* Workshop *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (Singapore), 4-5 November 2019.
+* Planned: Workshop *The future of LIBOR: Quantitative perspective on benchmarks, transition, fallback and regulation*. RiskMinds (Amsterdam, The Netherlands), 6 December 2019.
+* Planned: Workshop *The future of LIBOR: Quantitative perspective on benchmarks, transition, fallback and regulation*. Interest Rate Reform Conference (A Quant Perspective) - WBS (London, UK), 4 March 2020.
 
 ### Advisory
 
@@ -55,7 +60,7 @@ Some recent public courses:
     * *Exchange traded instruments*: Development of exchanged traded instruments, detailed term sheet, regulatory approval, CCP's risk management procedures.
     * *Margin methodologies*: Variation and Initial Margin methodologies design. Review and implementation of methodologies used by CCPs (replication). Bilateral margin methodologies.
     * *Simulation*: Model implementation for efficient simulation, xVA underlying models 
-    * *Benchmarks*: valuation of instruments indexed on new benchmarks, benchmarks discontinuation, LIBOR fallback analysis and solutions, overnight benchmarks (RFR) transition, valuation impacts, risk management, ALM
+    * *Benchmarks*: valuation of instruments indexed on new benchmarks, benchmarks transition and discontinuation, LIBOR fallback analysis and solutions, overnight benchmarks (RFR) transition, valuation impacts, risk management, ALM
     * *Code*: Large quant libraries available to price and risk manage interest rate books
 * Risk management
 	* Hedging strategies (design and back testing)

@@ -102,7 +102,7 @@
 
   <!-- ==================================================================== -->
   <properties>
-    <og-strata.version>2.3.0</og-strata.version>
+    <og-strata.version>2.6.0</og-strata.version>
     <joda-convert.version>2.1.1</joda-convert.version>
     <joda-beans.version>2.3</joda-beans.version>
     <joda.beans.indent>2</joda.beans.indent>
