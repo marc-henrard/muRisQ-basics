@@ -23,7 +23,7 @@ Comments and suggestions for improvements are welcome.
 
 ## Foundations
 
-Some code proposed in this repository is based on OpenGamma Strata (version 2.6.0) library: http://strata.opengamma.io/
+Some code proposed in this repository is based on OpenGamma Strata (version 2.7.0) library: http://strata.opengamma.io/
 
 ---
 
@@ -45,7 +45,7 @@ A in-house tailor-made course with our experts presented to your full team often
 
 Some of the popular courses are (course description and typical agendas available through the links):
 * Multi-curve and collateral framework: foundations, evolution and implementation. <https://murisq.blogspot.com/p/training.html#multicurve>
-* The future of LIBOR: Quantitative perspective on benchmarks, overnight, fallback and regulation. <https://murisq.blogspot.com/p/training.html#libor-future>
+* Benchmarks in transition: Quantitative perspective on benchmarks, transition, fallback and regulation. <https://murisq.blogspot.com/p/training.html#libor-future>
 * Algorithmic Differentiation in Finance. <https://murisq.blogspot.com/p/training.html#ad>
 * Central clearing and bilateral margin. <https://murisq.blogspot.com/p/training.html#margin>
 
