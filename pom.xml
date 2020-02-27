@@ -6,7 +6,7 @@
   
   <groupId>marc.henrard</groupId>
   <artifactId>murisq-basics</artifactId>
-  <version>2020.02.0</version>
+  <version>2020.02.1-SNAPSHOT</version>
   <name>muRisQ Basics</name>
   <description>muRisQ libraries - Basics</description>
   
