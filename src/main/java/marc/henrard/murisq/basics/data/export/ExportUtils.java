@@ -11,6 +11,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.OptionalDouble;
 
 import com.google.common.collect.ImmutableList;
 import com.opengamma.strata.collect.ArgChecker;
@@ -84,6 +85,8 @@ public class ExportUtils {
 
   /**
    * Append the csv-like representation of multiple time series at the end of an appendable.
+   * <p>
+   * The dates are the dates of the first time series. If a value is not present in another time series, 0 is exported.
    * 
    * @param names  the names of the time series exported
    * @param values  the values
@@ -110,8 +113,13 @@ public class ExportUtils {
         builderValues.append(p.getDate().format(DateTimeFormatter.ISO_DATE));
         for (int i = 0; i < nbSeries; i++) {
           builderValues.append(',');
-          builderValues.append(values.get(i).get(p.getDate()).getAsDouble());
-        }
+            OptionalDouble value = values.get(i).get(p.getDate());
+            if (value.isPresent()) {
+              builderValues.append(value.getAsDouble());
+            } else {
+              builderValues.append(0.0d);
+            }
+          }
         builderValues.append('\n');
       });
     destination.append(builderValues.toString());
