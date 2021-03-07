@@ -220,7 +220,7 @@ public final class TrapeziumRuleIntegral
   public String toString() {
     StringBuilder buf = new StringBuilder(96);
     buf.append("TrapeziumRuleIntegral{");
-    buf.append("timeMeasurement").append('=').append(timeMeasurement).append(',').append(' ');
+    buf.append("timeMeasurement").append('=').append(JodaBeanUtils.toString(timeMeasurement)).append(',').append(' ');
     buf.append("valuationDateTime").append('=').append(JodaBeanUtils.toString(valuationDateTime));
     buf.append('}');
     return buf.toString();

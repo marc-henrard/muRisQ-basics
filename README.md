@@ -62,13 +62,14 @@ Some recent public courses:
 * Workshop *Benchmarks in transition: Quantitative perspective on benchmarks, transition, fallback and regulation.*. Interest Rate Reform Conference (A Quant Perspective) - WBS (London, UK), 4 March 2020.
 * Workshop *Interest Rate Modelling in the Multi-curve Framework: Collateral and Regulatory Requirements*. LFS Workshop (London, UK), May 2020 and June 2020.
 * Course *Martingales and Fixed Income Valuation, CQF Module 5*. CQF Institute (London, UK), May 2020 and November 2020.
+* Multiple in-house courses for commercial banks, central banks, hedge funds, international financial organisations, etc. We have provided public and in-house workshops/courses/seminars in Africa, America, Asia, Europe, and Oceania (special discount for any client base in Antarctica!). 
 
 
 ### Advisory
 
 * Developments
     * *Multi-curve and collateral framework*. Collateral discounting, impact of CSA, multi-curve calibration, new benchmarks, cheapest-to-deliver
-    * *Benchmarks*: valuation of instruments indexed on new benchmarks, benchmarks transition and discontinuation, LIBOR fallback analysis and solutions, overnight benchmarks (RFR) transition, CCP discounting switch, valuation impacts, risk management, ALM, cost of protocol
+    * *Benchmarks*: valuation of instruments indexed on new benchmarks, LIBOR transition and discontinuation, LIBOR fallback analysis and solutions, overnight benchmarks (RFR) transition, CCP discounting switch, valuation impacts, risk management, ALM, cost of protocol, discounting big bang. Some of our tools related to LIBOR fallback and LIBOR discontinuation are described in our [Fallback Transformers pages] (https://murisq.blogspot.com/2018/10/libor-fallback-transformers.html).
     * *Interest rate models*: Term structure models, smile, negative rates, stochastic spreads.
     * *Exchange traded instruments*: Development of exchanged traded instruments, detailed term sheet, regulatory approval, CCP's risk management procedures.
     * *Margin methodologies*: Variation and Initial Margin methodologies design. Review and implementation of methodologies used by CCPs (replication). Bilateral margin methodologies.
@@ -78,9 +79,11 @@ Some recent public courses:
 	* Hedging strategies (design and back testing)
 	* Value-at-Risk
 	* Variation Margin efficient implementation
-	* Initial margin models (CCP and bilateral)
+	* Initial margin models (CCP and bilateral): replication, attribution, MVA 
+	* Valuation/VM dispute analysis
+	* Expert witness
 * Model validation
-	* Flow instruments: Multi-curve framework, collateral impact, CSA review.
+	* Flow instruments: Multi-curve framework, collateral impact, CSA review, CSA negotiation.
 	* Term structure: Multi-factors models; stochastic spreads.
 	* VaR: Parametric, historical, Monte Carlo.
 	* Smile: Swaption, cap/floor, negative rates, extrapolation.

@@ -158,8 +158,8 @@ public final class CurrencyAmountDerivatives
   public String toString() {
     StringBuilder buf = new StringBuilder(128);
     buf.append("CurrencyAmountDerivatives{");
-    buf.append("value").append('=').append(value).append(',').append(' ');
-    buf.append("currency").append('=').append(currency).append(',').append(' ');
+    buf.append("value").append('=').append(JodaBeanUtils.toString(value)).append(',').append(' ');
+    buf.append("currency").append('=').append(JodaBeanUtils.toString(currency)).append(',').append(' ');
     buf.append("derivatives").append('=').append(JodaBeanUtils.toString(derivatives));
     buf.append('}');
     return buf.toString();
