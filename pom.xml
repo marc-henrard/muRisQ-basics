@@ -6,7 +6,7 @@
   
   <groupId>marc.henrard</groupId>
   <artifactId>murisq-basics</artifactId>
-  <version>2021.10.2.SNAPSHOT</version>
+  <version>2022.04.01</version>
   <name>muRisQ Basics</name>
   <description>muRisQ libraries - Basics</description>
   
@@ -114,7 +114,7 @@
 
   <!-- ==================================================================== -->
   <properties>
-    <og-strata.version>2.10.0</og-strata.version>
+    <og-strata.version>2.11.0</og-strata.version>
     <joda-convert.version>2.1.1</joda-convert.version>
     <joda-beans.version>2.3</joda-beans.version>
     <joda.beans.indent>2</joda.beans.indent>
