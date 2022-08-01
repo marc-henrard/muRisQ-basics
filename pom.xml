@@ -6,7 +6,7 @@
   
   <groupId>marc.henrard</groupId>
   <artifactId>murisq-basics</artifactId>
-  <version>2022.04.02.SNAPSHOT</version>
+  <version>2022.08.01</version>
   <name>muRisQ Basics</name>
   <description>muRisQ libraries - Basics</description>
   
@@ -46,12 +46,12 @@
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
-      <version>3.13</version>
+      <version>${poi.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
-      <version>3.13</version>
+      <version>${poi.version}</version>
     </dependency>
     <!--  Used in tests -->
     <dependency>
@@ -114,12 +114,13 @@
 
   <!-- ==================================================================== -->
   <properties>
-    <og-strata.version>2.11.0</og-strata.version>
+    <og-strata.version>2.12.0</og-strata.version>
     <joda-convert.version>2.1.1</joda-convert.version>
     <joda-beans.version>2.3</joda-beans.version>
     <joda.beans.indent>2</joda.beans.indent>
     <assertj.version>3.14.0</assertj.version>
     <junit5.version>5.5.2</junit5.version>
+    <poi.version>3.13</poi.version>
     <!-- Properties for maven-compiler-plugin -->
     <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
     <maven.compiler.source>1.8</maven.compiler.source>
