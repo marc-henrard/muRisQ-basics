@@ -119,7 +119,7 @@
     <joda-beans.version>2.3</joda-beans.version>
     <joda.beans.indent>2</joda.beans.indent>
     <assertj.version>3.14.0</assertj.version>
-    <junit5.version>5.5.2</junit5.version>
+    <junit5.version>5.6.0</junit5.version>
     <poi.version>3.13</poi.version>
     <!-- Properties for maven-compiler-plugin -->
     <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
